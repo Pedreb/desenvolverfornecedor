@@ -101,7 +101,7 @@ if st.button("Gerar Prompt"):
     7. Homologação: {'Sim, deve ser homologado pela Energisa ou Equatorial' if homologacao == 'Sim' else 'Não é necessário'}.
     8. Preço: Caso o preço esteja disponível no site da empresa, informe o valor praticado.
 
-    Preciso de uma resposta clara, estratégica e aplicável à realidade da Dolp Engenharia.
+    Preciso de uma resposta clara, estratégica e aplicável à realidade da minha empresa.
     """
 
     st.subheader("Prompt Gerado:")
