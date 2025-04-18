@@ -90,7 +90,7 @@ st.write("Qual preço praticado se estiver evidente no site da empresa?")
 if st.button("Gerar Prompt"):
     # Geração do Prompt
     generated_prompt = f"""
-    ChatGPT, preciso de informações sobre desenvolvimento de fornecedores para a Dolp Engenharia.
+    Preciso de informações sobre desenvolvimento de fornecedores para minha empresa de Engenharia Elétrica.
 
     1. Tipo de Fornecedor: Busco um fornecedor do tipo {tipo_fornecedor}.
     2. Material: {Material}.
