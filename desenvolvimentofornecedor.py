@@ -39,7 +39,7 @@ def consultar_cnpj(cnpj):
 st.title("Gerador de Prompt para Desenvolvimento de Fornecedores")
 
 # 1 - Tipo de fornecedor
-tipo_fornecedor = st.selectbox("Você procura qual tipo de fornecedor?", ["Fabricante", "Distribuidor", "Varejo"])
+tipo_fornecedor = st.multiselect("Você procura qual tipo de fornecedor?", ["Fabricante", "Distribuidor", "Varejo"])
 
 Material = st.text_input("Qual nome do item ou serviço?")
 
