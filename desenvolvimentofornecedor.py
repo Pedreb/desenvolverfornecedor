@@ -80,8 +80,6 @@ if cidade_necessaria == "Sim" and state_codes_selected:
     cidades = get_cities_by_state(state_codes_selected)
     cidade_escolhida = st.selectbox("Selecione a cidade", cidades) if cidades else "Cidade não encontrada"
 
-# 6 - Homologação pela Energisa ou Equatorial
-homologacao = st.radio("Precisa de homologação da Energisa ou Equatorial?", ["Não", "Sim"])
 
 # 7 - Preço praticado (texto fixo)
 st.write("Qual preço praticado se estiver evidente no site da empresa?")
@@ -108,4 +106,5 @@ if st.button("Gerar Prompt"):
     st.code(generated_prompt, language='markdown')
 
     st.write("Copie o prompt acima e utilize a I.A para obter a melhor resposta!")
+
 
