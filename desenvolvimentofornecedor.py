@@ -96,8 +96,7 @@ if st.button("Gerar Prompt"):
     4. Não incluir as seguintes empresas: {', '.join(st.session_state.excluir_empresas) if st.session_state.excluir_empresas else "Nenhuma específica"}.
     5. Incluir empresas apenas desses estados específicos: {', '.join(estados_selecionados) if estados_selecionados else "Indiferente"}.
     6. Cidade específica: {'Necessário ser em ' + cidade_escolhida if cidade_necessaria == 'Sim' else 'Localização livre'}.
-    7. Homologação: {'Sim, deve ser homologado pela Energisa ou Equatorial' if homologacao == 'Sim' else 'Não é necessário'}.
-    8. Preço: Caso o preço esteja disponível no site da empresa, informe o valor praticado.
+    7. Preço: Caso o preço esteja disponível no site da empresa, informe o valor praticado.
 
     Preciso de uma resposta clara, estratégica e aplicável à realidade da minha empresa.
     """
@@ -106,5 +105,6 @@ if st.button("Gerar Prompt"):
     st.code(generated_prompt, language='markdown')
 
     st.write("Copie o prompt acima e utilize a I.A para obter a melhor resposta!")
+
 
 
