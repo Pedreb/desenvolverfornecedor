@@ -36,7 +36,7 @@ def consultar_cnpj(cnpj):
     return None, None
 
 
-st.title("Gerador de Prompt para Desenvolvimento de Fornecedores")
+st.title("Desenvolvimento de Fornecedores com Inteligência Artificial")
 
 # 1 - Tipo de fornecedor
 tipo_fornecedor = st.multiselect("Você procura qual tipo de fornecedor?", ["Fabricante", "Distribuidor", "Varejo"])
@@ -90,7 +90,7 @@ st.write("Qual preço praticado se estiver evidente no site da empresa?")
 if st.button("Gerar Prompt"):
     # Geração do Prompt
     generated_prompt = f"""
-    Preciso de informações sobre desenvolvimento de fornecedores para minha empresa de Engenharia Elétrica.
+    Preciso de informações sobre desenvolvimento de fornecedores para minha empresa.
 
     1. Tipo de Fornecedor: Busco um fornecedor do tipo {tipo_fornecedor}.
     2. Material: {Material}.
@@ -107,4 +107,5 @@ if st.button("Gerar Prompt"):
     st.subheader("Prompt Gerado:")
     st.code(generated_prompt, language='markdown')
 
-    st.write("Copie o prompt acima e use no ChatGPT para obter a melhor resposta!")
+    st.write("Copie o prompt acima e utilize a I.A para obter a melhor resposta!")
+
